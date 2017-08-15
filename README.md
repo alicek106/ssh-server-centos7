@@ -9,3 +9,6 @@ This image is for mpi based image in hpc environment.
 [root@bc51addddb91 /]# ssh localhost  
 Warning: Permanently added 'localhost' (ECDSA) to the list of known hosts.  
 [root@bc51addddb91 ~]#  
+
+# How to use, 2017. 08. 15. 1m 1m is outgoing and ingoing network bandwidth
+[root@localhost ssh-server-centos7]# docker run -it --rm 601kecila/ssh-server-centos7:0.0 1m 1m
