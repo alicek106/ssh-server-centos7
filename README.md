@@ -11,4 +11,4 @@ Warning: Permanently added 'localhost' (ECDSA) to the list of known hosts.
 [root@bc51addddb91 ~]#  
 
 # How to use, 2017. 08. 15.
-[root@localhost ssh-server-centos7]# docker run -it --rm 601kecila/ssh-server-centos7:0.0 cali0 1m 2m
+[root@localhost ssh-server-centos7]# docker run -it --rm 601kecila/ssh-server-centos7:0.1-tcconfig cali0 1m 2m
