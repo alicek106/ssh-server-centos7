@@ -24,3 +24,12 @@ RUN sed -i \
         /etc/ssh/sshd_config
 
 RUN chmod 400 ~/.ssh/id_rsa
+
+ADD pip-install.sh /
+RUN /bin/bash /pip-install.sh
+ADD tc /sbin/
+ADD ip /sbin/
+ADD entrypoint.sh /
+
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
